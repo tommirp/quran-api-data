@@ -12,6 +12,10 @@
 - [x] `/surah/{surah}/{ayah}` = Returns spesific ayah with requested surah.
 - [x] `/juz/{juz}` = Returns spesific juz with all ayah.
 - [x] `/ayahbyjuz/{juz}` = Returns all ayah by juz.
+- [x] `/sholat/citycode` = Returns all cities code.
+- [x] `/sholat/:citycode/:year/:month` = Returns all sholat time by city code per month.
+- [x] `/sholat/:citycode/:year/:month/:day` = Returns all sholat time by city code per day.
+- [x] `/asmaulhusna` = Returns all Asmaul Husna.
 
 ### Recommended fonts for Al-qur'an
 - [quran.musil.com](http://quran.mursil.com/Web-Print-Publishing-Quran-Text-Graphics-Fonts-and-Downloads/fonts-optimized-for-quran)
