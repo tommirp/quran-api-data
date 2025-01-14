@@ -1,0 +1,13 @@
+
+{
+  "name": "Quran API",
+  "description": "Quran API",
+  "repository": "https://github.com/tommirp/quran-api-data.git",
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "keywords": ["node", "express", "static", "quran", "quran-api", "api", "json"]
+}
