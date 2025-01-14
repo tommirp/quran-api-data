@@ -1,5 +1,11 @@
 const { SOURCE_API_BASEURL_3 } = require('../../config.js');
-const { sleep } = require('../../crawler/helpers');
+
+const sleep = async({ delay = 2000, throwReject = false }) => new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (throwReject) reject({ timeout: true });
+    else resolve();
+  }, delay);
+});
 
 class SholatHandler {
   static GetAllCities(_, res) {
