@@ -1,6 +1,7 @@
 # Quran - API
 
 ### Data Source
+- [api.myquran.com/v2](https://api.myquran.com/v2) = Sholat Schedule, Asmaul Husna, Etc (by banghasan.com)
 - [api.alquran.cloud](https://api.alquran.cloud) = Quran, Meta Verses, Audio.
 - [quran.kemenag.go.id](https://quran.kemenag.go.id) = Indonesia translations and tafsir verses (short/long).
 - [Al-Quran-ID-API](https://github.com/bachors/Al-Quran-ID-API) = Indonesia tafsir surah [*note: ambiguous revelation type on surah 13 and 55 in this source. So, I changed it to medinan (according to sahih international data)*]
