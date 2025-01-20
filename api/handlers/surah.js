@@ -11,6 +11,15 @@ class SurahHandler {
     return res.status(200).send(data);
   }
 
+  static getAllAyah(_, res) {
+    const allAyah = [];
+    quran.forEach(surah => {
+      surah.verses.forEach(ayah => allAyah.push(ayah));
+    });
+
+    return res.status(200).send(allAyah);
+  }
+
   static getAllAyahFromSurah(req, res) {
     const { surah } = req.params;
     const data = quran[surah - 1];

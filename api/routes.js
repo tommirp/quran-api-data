@@ -24,6 +24,7 @@ router.get('/', (_, res) => res.status(200).send({
       pattern: '/surah/{surah}/{ayah}',
       example: '/surah/18/60'
     },
+    listSurah: '/ayah',
     allAyahInSurah: {
       pattern: '/ayahbysurah/{surah}',
       example: '/ayahbysurah/1'
@@ -55,6 +56,7 @@ router.get('/', (_, res) => res.status(200).send({
 router.get('/surah', caching, SurahHandler.getAllSurah);
 router.get('/surah/:surah', caching, SurahHandler.getSurah);
 router.get('/surah/:surah/:ayah', caching, SurahHandler.getAyahFromSurah);
+router.get('/ayah', caching, SurahHandler.getAllAyah);
 router.get('/ayahbysurah/:surah', caching, SurahHandler.getAllAyahFromSurah);
 router.get('/juz/:juz', caching, JuzHandler.getJuz);
 router.get('/ayahbyjuz/:juz', caching, JuzHandler.getAyahFromJuz);
