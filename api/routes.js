@@ -5,6 +5,7 @@ const SurahHandler = require('./handlers/surah');
 const JuzHandler = require('./handlers/juz');
 const SholatHandler = require('./handlers/sholat');
 const HusnaHandler = require('./handlers/husna');
+const MetaHandler = require('./handlers/meta');
 
 const router = Router();
 
@@ -47,6 +48,7 @@ router.get('/', (_, res) => res.status(200).send({
       example: '/sholat/0421/2025/1/1'
     },
     allAsmaulhusna: '/asmaulhusna',
+    getyoutubelink: '/getyoutubelink',
   },
   maintaner: 'Tommi RP <tanyatommi@gmail.com>',
   source: 'https://github.com/tommirp/mim-quran-api'
@@ -68,6 +70,8 @@ router.get('/sholat/:citycode/:year/:month/:day', caching, SholatHandler.GetShol
 
 // Asmaul Husna - EXTERNAL DATA API
 router.get('/asmaulhusna', caching, HusnaHandler.GetAll);
+
+router.get('/getyoutubelink', caching, MetaHandler.GetYoutubeLink);
 
 // fallback router
 router.all('*', (req, res) => res.status(404).send({
