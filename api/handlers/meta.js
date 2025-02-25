@@ -5,31 +5,17 @@ class MetaHandler {
     const meta = [
       {
         "number": 1,
-        "metaName": "Youtube Mekah Primary",
+        "metaName": "Youtube Mekah",
         "metaType": "youtube",
-        "metaValue": url.youtubeMekahPrimary,
-        "metaDescription": "Youtube Mekah Primary"
+        "metaValue": url.youtubeMekah,
+        "metaDescription": "Youtube Mekah"
       },
       {
         "number": 2,
-        "metaName": "Youtube Mekah Secondary",
+        "metaName": "Youtube Madinah",
         "metaType": "youtube",
-        "metaValue": url.youtubeMekahSecondary,
-        "metaDescription": "Youtube Mekah Secondary"
-      },
-      {
-        "number": 3,
-        "metaName": "Youtube Madinah Primary",
-        "metaType": "youtube",
-        "metaValue": url.youtubeMadinahPrimary,
-        "metaDescription": "Youtube Madinah Primary"
-      },
-      {
-        "number": 4,
-        "metaName": "Youtube Madinah Secondary",
-        "metaType": "youtube",
-        "metaValue": url.youtubeMadinahSecondary,
-        "metaDescription": "Youtube Madinah Secondary"
+        "metaValue": url.youtubeMadinah,
+        "metaDescription": "Youtube Madinah"
       }
     ];
 
