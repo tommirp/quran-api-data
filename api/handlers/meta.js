@@ -1,4 +1,4 @@
-const url = require('../data/meta.json');
+const url = require('../../data/meta.json');
 
 class MetaHandler {
   static GetYoutubeLink(_, res) {
